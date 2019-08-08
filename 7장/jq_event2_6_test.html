@@ -6,7 +6,14 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
-
+	$(".btn_1.on").on("mouseover focus", function(){ 
+		alert("HELLO!");
+	})
+	$(".btn_1").addClass("on");
+	$(document).on("mouseover focus", ".btn_2.on", function(){
+		alert("WELCOME!")
+	});
+	$(".btn_2").addClass("on");
 });
 </script>
 </head>
